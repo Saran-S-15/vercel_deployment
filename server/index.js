@@ -29,6 +29,9 @@ app.get("/userData", async function (req, res) {
     }
 })
 
+app.use("/",(req,res) => {
+    res.send("Server is running")
+});
 
 app.listen(4000, () => {
     console.log("Server is Running Successfully");
